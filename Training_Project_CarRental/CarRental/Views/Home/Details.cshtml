@@ -1,0 +1,210 @@
+﻿@model CarRental.Models.ViewModels.VehicleDetailsViewModel
+
+@{
+    ViewData["Title"] = "Car Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 65vh;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 400px;
+            width: 100%;
+        }
+
+        .modal-header .close {
+            margin: -1rem -1rem -1rem auto;
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+        .mt-4-custom {
+            margin-top: 1rem;
+        }
+
+        .invalid-feedback {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="@(!string.IsNullOrEmpty(Model.Vehicle.imageUrl) ? Url.Content("~/images/vehicles/" + System.IO.Path.GetFileName(Model.Vehicle.imageUrl)) : Url.Content("~/images/default-car.jpg"))"
+                                 class="card-img-top" alt="@Model.Vehicle.brand @Model.Vehicle.model" />
+                            <div class="card-body text-center">
+                                <h2 class="card-title mb-3">@Model.Vehicle.brand @Model.Vehicle.model</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow">
+                            <div class="card-body">
+                                <h3 class="mb-4 mt-5">Car Details</h3>
+                                <p><strong>Year:</strong> @Model.Vehicle.year</p>
+                                <p><strong>Type:</strong> @Model.Vehicle.type</p>
+                                <p><strong>Capacity:</strong> @Model.Vehicle.capacity</p>
+                                <p><strong>Price per Day:</strong> @(Model.Vehicle.price_per_day.HasValue ? Model.Vehicle.price_per_day.Value.ToString("C") : "N/A")</p>
+                                <p><strong>Location:</strong> @Model.Vehicle.location</p>
+                                <p><strong>Color:</strong> @Model.Vehicle.color</p>
+                                <button type="button" class="btn btn-primary w-100 mt-4-custom" data-toggle="modal" data-target="#bookingModal">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book This Vehicle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="bookingForm" method="post" action="@Url.Action("Book", "Rental")">
+                    <div class="modal-body">
+                        <div id="step1">
+                            <input type="hidden" name="VehicleId" value="@Model.Vehicle.Id" />
+                            <div class="form-group">
+                                <label for="pickupDate">Pickup Date</label>
+                                <input type="date" class="form-control @(ViewData.ModelState["PickupDate"]?.Errors.Any() == true ? "is-invalid" : "")" id="pickupDate" name="PickupDate" required
+                                       value="@Model.PickupDate?.ToString("yyyy-MM-dd")" />
+                                @Html.ValidationMessage("PickupDate", "", new { @class = "invalid-feedback" })
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoffDate">Drop-off Date</label>
+                                <input type="date" class="form-control @(ViewData.ModelState["DropoffDate"]?.Errors.Any() == true ? "is-invalid" : "")" id="dropoffDate" name="DropoffDate" required
+                                       value="@Model.DropoffDate?.ToString("yyyy-MM-dd")" />
+                                @Html.ValidationMessage("DropoffDate", "", new { @class = "invalid-feedback" })
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary mt-4-custom" id="continueButton">Continue</button>
+                            </div>
+                        </div>
+
+                        <div id="step2" style="display: none;">
+                            <div class="form-group">
+                                <label class="mt-2" for="cardNumber">Card Number</label>
+                                <input type="text" class="form-control @(ViewData.ModelState["CardNumber"]?.Errors.Any() == true ? "is-invalid" : "")" id="cardNumber" name="CardNumber" required />
+                                @Html.ValidationMessage("CardNumber", "", new { @class = "invalid-feedback" })
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2" for="expiryDate">Expiry Date</label>
+                                <input type="text" class="form-control @(ViewData.ModelState["ExpiryDate"]?.Errors.Any() == true ? "is-invalid" : "")" id="expiryDate" name="ExpiryDate" required />
+                                @Html.ValidationMessage("ExpiryDate", "", new { @class = "invalid-feedback" })
+                            </div>
+                            <div class="form-group">
+                                <label class="mt-2" for="cvv">CVV</label>
+                                <input type="text" class="form-control @(ViewData.ModelState["CVV"]?.Errors.Any() == true ? "is-invalid" : "")" id="cvv" name="CVV" required />
+                                @Html.ValidationMessage("CVV", "", new { @class = "invalid-feedback" })
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-secondary mt-4-custom" id="backButton">Back</button>
+                                <button type="submit" class="btn btn-primary mt-4-custom">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const pickupDateInput = document.getElementById('pickupDate');
+                const dropoffDateInput = document.getElementById('dropoffDate');
+                const continueButton = document.getElementById('continueButton');
+                const backButton = document.getElementById('backButton');
+                const step1 = document.getElementById('step1');
+                const step2 = document.getElementById('step2');
+
+                const today = new Date();
+                const todayString = today.toISOString().split('T')[0];
+                pickupDateInput.setAttribute('min', todayString);
+                dropoffDateInput.setAttribute('min', todayString);
+
+                pickupDateInput.addEventListener('change', function () {
+                    const pickupDate = pickupDateInput.value;
+                    if (pickupDate) {
+                        const pickupDateObj = new Date(pickupDate);
+                        pickupDateObj.setDate(pickupDateObj.getDate() + 1);
+                        const minDropoffDate = pickupDateObj.toISOString().split('T')[0];
+                        dropoffDateInput.setAttribute('min', minDropoffDate);
+                    }
+                });
+
+                continueButton.addEventListener('click', function () {
+                    const pickupDate = pickupDateInput.value;
+                    const dropoffDate = dropoffDateInput.value;
+
+                    if (pickupDate && dropoffDate) {
+                        step1.style.display = 'none';
+                        step2.style.display = 'block';
+                    } else {
+                        alert('Please select both pickup and drop-off dates.');
+                    }
+                });
+
+                backButton.addEventListener('click', function () {
+                    step1.style.display = 'block';
+                    step2.style.display = 'none';
+                });
+
+                new Cleave('#cardNumber', {
+                    blocks: [4, 4, 4, 4], 
+                    delimiter: '-',      
+                    numericOnly: true     
+                });
+
+                new Cleave('#expiryDate', {
+                    date: true,
+                    datePattern: ['m', 'y'],
+                    delimiter: '/'
+                });
+
+                new Cleave('#cvv', {
+                    blocks: [3],
+                    numericOnly: true
+                });
+            });
+        </script>
+    }
+</body>
+</html>

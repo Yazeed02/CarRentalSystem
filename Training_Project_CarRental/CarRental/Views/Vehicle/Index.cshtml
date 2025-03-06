@@ -1,0 +1,94 @@
+﻿@model CarRental.Models.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Vehicles List";
+}
+
+<div class="d-flex flex-column min-vh-65">
+    <div class="flex-grow-1">
+        <div class="card shadow-sm mt-5 mb-5">
+            <div class="card-header bg-primary text-white text-center py-3">
+                <h2>Vehicle List</h2>
+            </div>
+            <div class="card-body p-4">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <h4 class="text-dark">All Available Vehicles</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a asp-controller="vehicle" asp-action="upsert" class="btn btn-primary">
+                            <i class="fa-solid fa-circle-plus"></i> Add New Vehicle
+                        </a>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover align-middle">
+                        <thead class="table-primary">
+                            <tr class="text-center">
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Year</th>
+                                <th>Location</th>
+                                <th>Type</th>
+                                <th>Capacity</th>
+                                <th>Price</th>
+                                <th>Color</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var obj in Model.AvailableCars.OrderBy(o => o.brand))
+                            {
+                                <tr>
+                                    <td class="text-center">@obj.brand</td>
+                                    <td class="text-center">@obj.model</td>
+                                    <td class="text-center">@obj.year</td>
+                                    <td class="text-center">@obj.location</td>
+                                    <td class="text-center">@obj.type</td>
+                                    <td class="text-center">@obj.capacity</td>
+                                    <td class="text-center">@obj.price_per_day.Value.ToString("C")</td>
+                                    <td class="text-center">@obj.color</td>
+                                    <td class="text-center">
+                                        <div class="btn-group" role="group">
+                                            <a asp-controller="vehicle" asp-action="upsert" asp-route-id="@obj.Id" class="btn btn-primary mx-1">
+                                                <i class="fa-solid fa-pen-to-square"></i> Edit
+                                            </a>
+                                            <a asp-controller="vehicle" asp-action="delete" asp-route-id="@obj.Id" class="btn btn-danger mx-1">
+                                                <i class="fa-solid fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .d-flex.flex-column.min-vh-65 {
+        min-height: 65vh;
+    }
+
+    footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .flex-grow-1 {
+        flex-grow: 1;
+    }
+
+</style>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <partial name="_Notification" />
+}

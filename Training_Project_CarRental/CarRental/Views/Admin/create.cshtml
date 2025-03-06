@@ -1,0 +1,96 @@
+﻿@model CarRental.Models.ViewModels.AdminViewModel
+
+@{
+    ViewData["Title"] = "Add admin";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 65vh;
+        }
+        .content {
+            flex: 1; 
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="card shadow border-0 my-4">
+                <div class="card-header bg-primary ml-0 py-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="text-white py-2">Create admin</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <form method="post" class="row" enctype="multipart/form-data">
+                        <input asp-for="admin.Id" hidden />
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="border p-3">
+                                    <div class="form-floating py-2 col-12">
+                                        <input asp-for="admin.first_name" class="form-control" placeholder="First Name" />
+                                        <label asp-for="admin.first_name">First Name</label>
+                                        <span asp-validation-for="admin.first_name" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-floating py-2 col-12">
+                                        <input asp-for="admin.last_name" class="form-control" placeholder="Last Name" />
+                                        <label asp-for="admin.last_name">Last Name</label>
+                                        <span asp-validation-for="admin.last_name" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-floating py-2 col-12">
+                                        <input type="email" asp-for="admin.email" class="form-control" placeholder="Email" />
+                                        <label asp-for="admin.email">Email</label>
+                                        <span asp-validation-for="admin.email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-floating py-2 col-12">
+                                        <input type="password" asp-for="admin.password" class="form-control" placeholder="password" />
+                                        <label asp-for="admin.password">Password</label>
+                                        <span asp-validation-for="admin.password" class="text-danger"></span>
+                                    </div>
+                                    <div asp-validation-summary="ModelOnly"></div>
+                                    <div class="row pb-2 mt-3">
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-primary form-control">Create</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <a asp-controller="admin" asp-action="Index" class="btn btn-outline-primary form-control">
+                                                Back to List
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+        <partial name="_Notification" />
+    }
+</body>
+</html>

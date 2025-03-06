@@ -1,0 +1,63 @@
+﻿@model CarRental.Models.ViewModels.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">We'd love to hear from you. Please reach out with any questions or comments.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Contact Information</h4>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> <a class="link-dark" href="mailto:info@carrental.com">info@carrental.com</a></li>
+                <li><strong>Phone:</strong> <a class="link-dark" href="tel:+1234567890">+123 456 7890</a></li>
+                <li><strong>Address:</strong> 123 Car Rental Lane, City, Country</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-6">
+            <h4>Send Us a Message</h4>
+            <form method="post" asp-action="SendContact">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="Name" value="@(Model?.Name ?? string.Empty)" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="Email" value="@(Model?.Email ?? string.Empty)" required />
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="Message" rows="4" required>@(Model?.Message ?? string.Empty)</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+    footer {
+        padding: 1rem;
+        border-top: 1px solid #dee2e6;
+    }
+</style>

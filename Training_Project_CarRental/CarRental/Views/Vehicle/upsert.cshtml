@@ -1,0 +1,122 @@
+﻿@model CarRental.Models.ViewModels.VehicleViewModel
+
+@{
+    ViewData["Title"] = Model.Vehicle.Id == 0 ? "Add Vehicle" : "Edit Vehicle";
+}
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-primary ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">@(Model.Vehicle.Id != 0 ? "Update" : "Create") Vehicle</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" class="row" enctype="multipart/form-data">
+            <input asp-for="Vehicle.Id" hidden />
+            <input asp-for="Vehicle.imageUrl" hidden />
+            <div class="row">
+                <div class="col-10">
+                    <div class="border p-3">
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Vehicle.brand" class="form-control" placeholder="Brand" />
+                            <label asp-for="Vehicle.brand">Brand</label>
+                            <span asp-validation-for="Vehicle.brand" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Vehicle.model" class="form-control" placeholder="Model" />
+                            <label asp-for="Vehicle.model">Model</label>
+                            <span asp-validation-for="Vehicle.model" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Vehicle.year" class="form-control" placeholder="Year" />
+                            <label asp-for="Vehicle.year">Year</label>
+                            <span asp-validation-for="Vehicle.year" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Vehicle.type" class="form-control" placeholder="Type" />
+                            <label asp-for="Vehicle.type">Type</label>
+                            <span asp-validation-for="Vehicle.type" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Vehicle.capacity" class="form-control" placeholder="Capacity" />
+                            <label asp-for="Vehicle.capacity">Capacity</label>
+                            <span asp-validation-for="Vehicle.capacity" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Vehicle.price_per_day" class="form-control" placeholder="Price per Day" />
+                            <label asp-for="Vehicle.price_per_day">Price per Day</label>
+                            <span asp-validation-for="Vehicle.price_per_day" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <select asp-for="Vehicle.location" class="form-select">
+                                <option selected disabled>Select Location</option>
+                                <option value="Amman">Amman</option>
+                                <option value="Balqa">Balqa</option>
+                                <option value="Irbid">Irbid</option>
+                                <option value="Jerash">Jerash</option>
+                                <option value="Ajloun">Ajloun</option>
+                                <option value="Madaba">Madaba</option>
+                                <option value="Aqaba">Aqaba</option>
+                                <option value="Mafraq">Mafraq</option>
+                                <option value="Karak">Karak</option>
+                                <option value="Tafilah">Tafilah</option>
+                                <option value="Ma'an">Ma'an</option>
+                                <option value="Zarqa">Zarqa</option>
+                            </select>
+                            <label asp-for="Vehicle.location">Location</label>
+                            <span asp-validation-for="Vehicle.location" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <select asp-for="Vehicle.color" class="form-select">
+                                <option selected disabled>Select Color</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Green">Green</option>
+                                <option value="Black">Black</option>
+                                <option value="White">White</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Navy Blue">Navy Blue</option>
+                                <option value="Yellow">Yellow</option>
+                            </select>
+                            <label asp-for="Vehicle.color">Color</label>
+                            <span asp-validation-for="Vehicle.color" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating py-2 col-12">
+                            <input type="file" name="file" class="form-control" />
+                            <label for="file">Image</label>
+                            <span asp-validation-for="Vehicle.imageUrl" class="text-danger"></span>
+                        </div>
+                        <div asp-validation-summary="ModelOnly"></div>
+                        <div class="row pb-2 mt-3">
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary form-control">@(Model.Vehicle.Id != 0 ? "Update" : "Create")</button>
+                            </div>
+                            <div class="col-6">
+                                <a asp-controller="Vehicle" asp-action="Index" class="btn btn-outline-primary form-control">
+                                    Back to List
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    @if (!string.IsNullOrEmpty(Model.Vehicle.imageUrl))
+                    {
+                        <img src="@Url.Content("~/images/vehicles/" + System.IO.Path.GetFileName(Model.Vehicle.imageUrl))" width="200" style="border-radius:5px; border:1px solid #bbb9b9" />
+                    }
+                    else
+                    {
+                        
+                    }
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <partial name="_Notification" />
+}

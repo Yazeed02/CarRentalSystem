@@ -1,0 +1,385 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CarRental.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CarRental.5o2ecxp3ey.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\default-car.jpg",
+      "PackagePath": "staticwebassets\\images\\default-car.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\0a667b6c-09be-448b-b55d-2a0d4a035b3c.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\0a667b6c-09be-448b-b55d-2a0d4a035b3c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\1a742e12-84bb-4789-88f6-ceae7859960b.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\1a742e12-84bb-4789-88f6-ceae7859960b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\1b970597-bf64-4c59-b669-dcbbf714afe3.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\1b970597-bf64-4c59-b669-dcbbf714afe3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\1c20f048-03d5-401c-8d71-f3de1385ca42.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\1c20f048-03d5-401c-8d71-f3de1385ca42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\204ab2c8-8e59-4661-be09-5267c071cdc4.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\204ab2c8-8e59-4661-be09-5267c071cdc4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\25c58b22-b2ed-4a58-92bd-a9e0ace2fa2c.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\25c58b22-b2ed-4a58-92bd-a9e0ace2fa2c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\2bcad2b2-1152-4592-bbbd-a9fd8dff5912.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\2bcad2b2-1152-4592-bbbd-a9fd8dff5912.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\35d7d79b-c965-49b4-a131-b8938a422b73.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\35d7d79b-c965-49b4-a131-b8938a422b73.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\3906ee35-8e56-41b5-abc4-04210aea4e09.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\3906ee35-8e56-41b5-abc4-04210aea4e09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\42223673-441e-429c-97c9-849ce0825274.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\42223673-441e-429c-97c9-849ce0825274.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\43289e80-bb16-4250-aa37-6fcdcb5f11d3.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\43289e80-bb16-4250-aa37-6fcdcb5f11d3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\4e873577-2f39-4252-ac18-91443c541d27.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\4e873577-2f39-4252-ac18-91443c541d27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\50850213-8178-467e-b0cf-f0f4e0c16526.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\50850213-8178-467e-b0cf-f0f4e0c16526.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\576e1f29-d88b-4a5f-bd15-6aada24e331c.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\576e1f29-d88b-4a5f-bd15-6aada24e331c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\62496efe-fd10-4f8c-8dd3-4157af184ef5.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\62496efe-fd10-4f8c-8dd3-4157af184ef5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\683e6780-92c2-4124-991e-c4e4f00639b1.webp",
+      "PackagePath": "staticwebassets\\images\\vehicles\\683e6780-92c2-4124-991e-c4e4f00639b1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\7127b06a-ac24-4d71-bef4-141096abf8c4.jpeg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\7127b06a-ac24-4d71-bef4-141096abf8c4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\778ef0c4-36cd-44fa-b708-368783db7fc3.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\778ef0c4-36cd-44fa-b708-368783db7fc3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\84c65e17-1413-4dee-9c76-b382f5397ed0.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\84c65e17-1413-4dee-9c76-b382f5397ed0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\86805e73-6921-4714-ba87-8a27de2c6e87.jpeg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\86805e73-6921-4714-ba87-8a27de2c6e87.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\89b6fca5-2c56-4989-b070-e8a031a7bc9b.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\89b6fca5-2c56-4989-b070-e8a031a7bc9b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\af1e94e1-19fa-46a5-933b-bbbee7f1b119.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\af1e94e1-19fa-46a5-933b-bbbee7f1b119.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\b72d189b-0baa-4fd0-821d-e1f97657e54e.jpeg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\b72d189b-0baa-4fd0-821d-e1f97657e54e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\c138faf9-df7a-4d8e-8cee-cf71c2834f84.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\c138faf9-df7a-4d8e-8cee-cf71c2834f84.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\d7f6a868-042e-4c9f-a6ab-f114d3af571d.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\d7f6a868-042e-4c9f-a6ab-f114d3af571d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\ed6287d8-7abf-4ffe-9d0c-58a83cc899fc.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\ed6287d8-7abf-4ffe-9d0c-58a83cc899fc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\f9c4b566-5cda-41ed-982a-2ec0f836c820.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\f9c4b566-5cda-41ed-982a-2ec0f836c820.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\images\\vehicles\\fd39461f-279b-4c27-9003-2241df569ad4.jpeg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\fd39461f-279b-4c27-9003-2241df569ad4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CarRental.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CarRental.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CarRental.props",
+      "PackagePath": "build\\CarRental.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CarRental.props",
+      "PackagePath": "buildMultiTargeting\\CarRental.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CarRental.props",
+      "PackagePath": "buildTransitive\\CarRental.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,123 @@
+﻿@using Newtonsoft.Json
+@model CarRental.Models.ViewModels.SearchViewModel
+
+@{
+    ViewData["Title"] = "Search Vehicles";
+    int initialCarDisplayCount = 6;
+    int totalCars = Model.AvailableCars?.Count ?? 0;
+}
+
+<style>
+    .position-relative {
+        position: relative;
+    }
+
+    .shadow-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-4">Search Vehicles</h1>
+
+    @if (Model.AvailableCars.Any())
+    {
+        <div class="mt-5">
+            <h3 class="mb-3">Available Vehicles</h3>
+            <div class="row" id="car-list">
+                @for (int i = 0; i < initialCarDisplayCount && i < totalCars; i++)
+                {
+                    var vehicle = Model.AvailableCars.OrderBy(o => o.brand).ElementAt(i);
+                    <div class="col-md-4 mb-4 car-item">
+                        <div class="card h-100">
+                            <img src="@(!string.IsNullOrEmpty(vehicle.imageUrl) ? Url.Content("~/images/vehicles/" + System.IO.Path.GetFileName(vehicle.imageUrl)) : Url.Content("~/images/default-car.jpg"))"
+                                 class="card-img-top car-image" alt="@vehicle.brand @vehicle.model" style="object-fit: cover; height: 250px; width: 100%;" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>@vehicle.brand @vehicle.model</b></h5>
+                                <p class="card-text">
+                                    <strong>Price per Day:</strong> @(vehicle.price_per_day?.ToString("C") ?? "N/A")<br />
+                                    <strong>Location:</strong> @vehicle.location<br />
+                                    <strong>Color:</strong> @vehicle.color
+                                </p>
+                                <div class="text-center">
+                                    <a href="@Url.Action("Details", "Home", new { id = vehicle.Id, pickupDate = Model.PickupDate?.ToString("yyyy-MM-dd"), dropoffDate = Model.DropoffDate?.ToString("yyyy-MM-dd") })" class="btn btn-primary w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (totalCars > initialCarDisplayCount)
+            {
+                <div class="text-center mt-4">
+                    <button id="show-more-cars" class="btn btn-primary" data-initial-count="@initialCarDisplayCount" data-total-count="@totalCars">Show more</button>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center mt-5">
+            <p>No vehicles found matching your criteria.</p>
+        </div>
+    }
+
+    <div class="mb-5 mt-5">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var totalCars = @totalCars;
+        var initialCarDisplayCount = @initialCarDisplayCount;
+        var displayedCars = initialCarDisplayCount;
+
+        var vehicles = @Html.Raw(JsonConvert.SerializeObject(Model.AvailableCars ?? new List<CarRental.Models.Vehicle>()));
+
+        $('#show-more-cars').click(function () {
+            var newCarCount = Math.min(totalCars, displayedCars + 6);
+            var carsHtml = '';
+
+            for (var i = displayedCars; i < newCarCount; i++) {
+                var vehicle = vehicles[i];
+                carsHtml += `
+                                <div class="col-md-4 mb-4 car-item">
+                                    <div class="card h-100">
+                                        <img src="${vehicle.imageUrl ? '@Url.Content("~/images/vehicles/")' + vehicle.imageUrl.split('/').pop() : '@Url.Content("~/images/default-car.jpg")'}"
+                                             class="card-img-top car-image" alt="${vehicle.brand} ${vehicle.model}" style="object-fit: cover; height: 250px; width: 100%;" />
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center"><b>${vehicle.brand} ${vehicle.model}</b></h5>
+                                            <p class="card-text">
+                                                <strong>Price per Day:</strong> ${vehicle.price_per_day ? vehicle.price_per_day.toFixed(2) : 'N/A'}<br />
+                                                <strong>Location:</strong> ${vehicle.location}<br />
+                                                <strong>Color:</strong> ${vehicle.color}
+                                            </p>
+                                            <div class="text-center">
+                                                <a href="/Home/Details/${vehicle.Id}?pickupDate=${encodeURIComponent('@Model.PickupDate?.ToString("yyyy-MM-dd")')}&dropoffDate=${encodeURIComponent('@Model.DropoffDate?.ToString("yyyy-MM-dd")')}" class="btn btn-primary w-100">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>`;
+            }
+
+            $('#car-list').append(carsHtml);
+            displayedCars = newCarCount;
+
+            if (displayedCars >= totalCars) {
+                $('#show-more-cars').hide();
+            }
+        });
+    });
+</script>

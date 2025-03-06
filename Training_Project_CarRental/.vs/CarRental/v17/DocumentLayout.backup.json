@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\views\\shared\\_carlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\views\\shared\\_carlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\models\\viewmodels\\vehiclestatusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\models\\viewmodels\\vehiclestatusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|c:\\users\\yazeed\\desktop\\my files\\projects\\training_project_carrental\\carrental\\models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E918640-320E-4A37-9218-2B12F1D855DF}|CarRental\\CarRental.csproj|solutionrelative:carrental\\models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRental\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CarRental\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T17:49:11.53Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarRental\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarRental\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAF4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T22:39:12.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehicleStatusViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Models\\ViewModels\\VehicleStatusViewModel.cs",
+              "RelativeDocumentMoniker": "CarRental\\Models\\ViewModels\\VehicleStatusViewModel.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Models\\ViewModels\\VehicleStatusViewModel.cs",
+              "RelativeToolTip": "CarRental\\Models\\ViewModels\\VehicleStatusViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T13:54:28.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_CarListPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Shared\\_CarListPartial.cshtml",
+              "RelativeDocumentMoniker": "CarRental\\Views\\Shared\\_CarListPartial.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Shared\\_CarListPartial.cshtml",
+              "RelativeToolTip": "CarRental\\Views\\Shared\\_CarListPartial.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T22:07:09.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CarRental\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CarRental\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAqwIwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T21:54:19.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "homeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Models\\ViewModels\\homeViewModel.cs",
+              "RelativeDocumentMoniker": "CarRental\\Models\\ViewModels\\homeViewModel.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Models\\ViewModels\\homeViewModel.cs",
+              "RelativeToolTip": "CarRental\\Models\\ViewModels\\homeViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T21:53:46.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentalController.cs",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Controllers\\RentalController.cs",
+              "RelativeDocumentMoniker": "CarRental\\Controllers\\RentalController.cs",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Controllers\\RentalController.cs",
+              "RelativeToolTip": "CarRental\\Controllers\\RentalController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwFkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T12:58:36.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "CarRental\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Yazeed\\Desktop\\My Files\\Projects\\Training_Project_CarRental\\CarRental\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "CarRental\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwL4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T10:41:30.819Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

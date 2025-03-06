@@ -1,0 +1,30 @@
+﻿@model IEnumerable<CarRental.Models.ViewModels.VehicleStatusViewModel>
+
+@foreach (var item in Model)
+{
+    var vehicle = item.Vehicle;
+    var isRented = item.IsRented;
+
+    <div class="col-md-4 mb-4 car-item">
+        <div class="card h-100">
+            <img src="@(!string.IsNullOrEmpty(vehicle.imageUrl) ? Url.Content("~/images/vehicles/" + System.IO.Path.GetFileName(vehicle.imageUrl)) : Url.Content("~/images/default-car.jpg"))"
+                 class="card-img-top car-image" alt="@vehicle.brand @vehicle.model" style="object-fit: cover; height: 250px; width: 100%;" />
+            <div class="card-body">
+                <h5 class="card-title text-center"><b>@vehicle.brand @vehicle.model</b></h5>
+                <p class="card-text">
+                    <strong>Price per Day:</strong> @(vehicle.price_per_day?.ToString("C") ?? "N/A")<br />
+                    <strong>Location:</strong> @vehicle.location<br />
+                    <strong>Color:</strong> @vehicle.color
+                </p>
+                @if (isRented)
+                {
+                    <p class="not-available-button btn btn-danger w-100 view-details">Not Available</p>
+                }
+                else
+                {
+                    <a href="@Url.Action("Details", "Home", new { id = vehicle.Id })" class="btn btn-primary w-100 view-details">View Details</a>
+                }
+            </div>
+        </div>
+    </div>
+}

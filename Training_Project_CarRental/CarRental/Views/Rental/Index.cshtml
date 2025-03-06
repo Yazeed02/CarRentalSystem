@@ -1,0 +1,138 @@
+﻿@model CarRental.Models.ViewModels.RentalListViewModel
+@{
+    ViewData["Title"] = "My Rentals";
+}
+
+<div class="d-flex flex-column min-vh-65">
+    <div class="flex-grow-1">
+        <div class="card shadow-sm mt-5 mb-5">
+            <div class="card-header bg-primary text-white text-center py-3">
+                <h2>My Rentals</h2>
+            </div>
+            <div class="card-body p-4">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover align-middle">
+                        <thead class="table-primary">
+                            <tr class="text-center">
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Total Cost</th>
+                                <th>Payment Method</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var rental in Model.Rentals)
+                            {
+                                <tr>
+                                    <td class="text-center">@rental.VehicleBrand</td>
+                                    <td class="text-center">@rental.VehicleModel</td>
+                                    <td class="text-center">@rental.RentalStartDate.ToString("d")</td>
+                                    <td class="text-center">@rental.RentalEndDate.ToString("d")</td>
+                                    <td class="text-center">@rental.TotalCost.ToString("C")</td>
+                                    <td class="text-center">@rental.PaymentMethod</td>
+                                    <td class="text-center">
+                                        <form asp-action="CancelRental" method="post" class="cancel-rental-form">
+                                            <input type="hidden" name="rentalId" value="@rental.RentalId" />
+                                            <button type="button" class="btn btn-danger cancel-rental-btn">
+                                                <i class="fa fa-times"></i> Cancel
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .d-flex.flex-column.min-vh-65 {
+        min-height: 65vh;
+    }
+
+    footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .flex-grow-1 {
+        flex-grow: 1;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .table thead {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+    .fa-times {
+        margin-right: 5px;
+    }
+</style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cancelButtons = document.querySelectorAll('.cancel-rental-btn');
+
+            cancelButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const form = this.closest('form');
+                    Swal.fire({
+                        title: "Are you sure?",
+                        text: "You won't be able to revert this!",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#405983",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Yes, delete it!"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            form.submit();
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your rental has been cancelled.",
+                                icon: "success"
+                            });
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+}

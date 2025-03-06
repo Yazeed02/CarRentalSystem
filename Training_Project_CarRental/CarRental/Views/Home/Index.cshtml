@@ -1,0 +1,160 @@
+﻿@model CarRental.Models.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home";
+    int initialCarDisplayCount = 6;
+    var totalCars = Model.VehicleStatuses?.Count() ?? 0;
+    var pickupDate = Model.PickupDate?.ToString("yyyy-MM-dd");
+    var dropoffDate = Model.DropoffDate?.ToString("yyyy-MM-dd");
+}
+<style>
+    .position-relative {
+        position: relative;
+    }
+
+    .shadow-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .not-available-button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: not-allowed;
+    }
+
+        .not-available-button:hover {
+            background-color: darkred;
+        }
+</style>
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4">Welcome to Car Rental</h1>
+        <p class="lead">Find the perfect vehicle for your needs.</p>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="position-relative text-center" style="height: 500px; background-image: url('@Url.Content("~/images/default-car.jpg")'); background-size: cover; background-position: center; border-radius: 20px;">
+                <div class="shadow-overlay"></div>
+                <div class="position-absolute top-50 start-50 translate-middle bg-white bg-opacity-75 p-5 rounded shadow" style="max-width: 400px;">
+                    <h3 class="mb-3">Book Your Vehicle</h3>
+                    <form id="bookingForm" method="get" action="@Url.Action("Search", "Home")">
+                        <div class="form-group mb-3">
+                            <label for="location">Location</label>
+                            <select class="form-select" id="location" name="location" required>
+                                <option value="Amman">Amman</option>
+                                <option value="Balqa">Balqa</option>
+                                <option value="Irbid">Irbid</option>
+                                <option value="Jerash">Jerash</option>
+                                <option value="Ajloun">Ajloun</option>
+                                <option value="Madaba">Madaba</option>
+                                <option value="Aqaba">Aqaba</option>
+                                <option value="Mafraq">Mafraq</option>
+                                <option value="Karak">Karak</option>
+                                <option value="Tafilah">Tafilah</option>
+                                <option value="Ma'an">Ma'an</option>
+                                <option value="Zarqa">Zarqa</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="pickupDate">Pickup Date</label>
+                            <input type="date" class="form-control" id="pickupDate" name="pickupDate" required />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="dropoffDate">Drop-off Date</label>
+                            <input type="date" class="form-control" id="dropoffDate" name="dropoffDate" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <h3 class="mb-3">Available Cars</h3>
+        <div class="row" id="car-list">
+            @await Html.PartialAsync("_CarListPartial", Model.VehicleStatuses.Take(initialCarDisplayCount))
+        </div>
+
+        @if (totalCars > initialCarDisplayCount)
+        {
+            <div class="text-center mt-4">
+                <button id="show-more-cars" class="btn btn-primary" data-initial-count="@initialCarDisplayCount" data-total-count="@totalCars">Show more</button>
+            </div>
+        }
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const today = new Date().toISOString().split('T')[0];
+            const pickupDateInput = $('#pickupDate');
+            const dropoffDateInput = $('#dropoffDate');
+
+            pickupDateInput.attr('min', today);
+            dropoffDateInput.attr('min', today);
+
+            pickupDateInput.on('change', function () {
+                const pickupDate = new Date(pickupDateInput.val());
+                pickupDate.setDate(pickupDate.getDate() + 1);
+                const minDropoffDate = pickupDate.toISOString().split('T')[0];
+                dropoffDateInput.attr('min', minDropoffDate);
+            });
+
+            $('#bookingForm').on('submit', function (event) {
+                const pickupDate = new Date(pickupDateInput.val());
+                const dropoffDate = new Date(dropoffDateInput.val());
+
+                if (pickupDate >= dropoffDate) {
+                    event.preventDefault();
+                    alert("Pickup date must be earlier than drop-off date.");
+                }
+            });
+
+            $('#show-more-cars').on('click', function () {
+                const button = $(this);
+                const start = button.data('initial-count');
+                const count = 6;
+
+                $.ajax({
+                    url: '@Url.Action("LoadMoreCars", "Home")',
+                    type: 'GET',
+                    data: { start: start, count: count },
+                    success: function (data) {
+                        $('#car-list').append(data);
+                        button.data('initial-count', start + count);
+
+                        if (data.trim() === '') {
+                            button.hide();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}
